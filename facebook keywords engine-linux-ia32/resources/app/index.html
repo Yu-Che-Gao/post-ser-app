@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="css/photon.css">
+  <style>
+    header {
+      -webkit-app-region: drag;
+    }
+    
+    .toolbar-header {
+      display: inline-flex;
+    }
+    
+    .toolbar-header .title {
+      flex-grow: 1;
+      text-align: center;
+    }
+    
+    .toolbar-header .action-group {
+      list-style: none;
+      margin: 0 0 0 auto;
+      padding: 1px 5px 0 2px;
+    }
+    
+    .toolbar-header .action-group .action-button {
+      display: inline-block;
+      padding: 0 5px;
+      -webkit-app-region: no-drag;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="window">
+    <header class="toolbar toolbar-header">
+      <h1 class="title">facebook文章關鍵字搜尋</h1>
+
+      <ul class="action-group">
+        <li class="action-button">
+          <span class="icon icon-plus-circled" id="maximized"></span>
+        </li>
+        <li class="action-button">
+          <span class="icon icon-minus-circled" id="minimized"></span>
+        </li>
+        <li class="action-button">
+          <span class="icon icon-cancel-circled" id="closed"></span>
+        </li>
+      </ul>
+    </header>
+    <div class="window-content">
+      <div class="pane-group">
+        <div class="pane">
+          <div class="padded-more">
+            <h1>facebook文章關鍵字搜尋</h1>
+            <p>
+              透過關鍵字搜尋Facebook中文章，目前提供2014.04後的文章
+              輸出結果為文章標題、時間與連結
+              搜尋語法，預設為兩兩拆字之搜尋(例如資策會將會拆為資策與策會)，若要針對較長的詞句搜尋，請加上 " " 雙引號("資策會")
+              支援 AND OR NOT 語法，(例如輸入: "資策會" AND "創研所" 會搜尋同時具有兩個關鍵字的文章)
+              若未設定搜尋時間範圍，預設為近一個月之內容
+            </p>
+            <p>
+              <div class="form-group">
+                <label>請輸入搜尋字串:</label>
+                <textarea id="inputData" class="form-control" rows="3"></textarea>
+              </div>
+            </p>
+            <p>
+              <button id="sendBtn" class="btn btn-large btn-primary" style="float:right;">送出</button>
+            </p>
+            <p>
+              <div id="result"></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    require('./renderer.js');
+  </script>
+</body>
+
+</html>

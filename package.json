@@ -1,14 +1,14 @@
 {
-  "name": "electron-quick-start",
+  "name": "facebook keywords engine",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "facebook article keywords search",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron/electron-quick-start.git"
+    "url": "git+https://github.com/Yu-Che-Gao/post-ser-app.git"
   },
   "keywords": [
     "Electron",
@@ -19,9 +19,9 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/electron/electron-quick-start/issues"
+    "url": "https://github.com/Yu-Che-Gao/post-ser-app/issues"
   },
-  "homepage": "https://github.com/electron/electron-quick-start#readme",
+  "homepage": "https://github.com/Yu-Che-Gao/post-ser-app#readme",
   "devDependencies": {
     "electron-prebuilt": "^1.2.0"
   }
